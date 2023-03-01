@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn EatUp.wsgi
+web: python manage.py migrate && gunicorn eatupweb.wsgi
