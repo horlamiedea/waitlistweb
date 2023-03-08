@@ -42,11 +42,13 @@ INSTALLED_APPS = [
     # documentation
     'drf_yasg',
     'web',
+    'corsheaders',
     'phonenumber_field',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
