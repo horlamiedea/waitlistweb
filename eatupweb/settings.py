@@ -64,7 +64,7 @@ ROOT_URLCONF = 'eatupweb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -145,3 +145,23 @@ STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'mail.eatup.ng'
+EMAIL_PORT =  465
+EMAIL_USE_TLS = False
+EMAIL_HOST_USER = 'hello@eatup.ng'
+EMAIL_HOST_PASSWORD = 'Olatunbosun1##'
+DEFAULT_FROM_EMAIL = 'hello@eatup.ng'
+SERVER_MAIL = DEFAULT_FROM_EMAIL
+
+
+
+
+EMAIL_TIMEOUT = 60
+
+ACCOUNT_EMAIL_VERIFICATION = "none"
+
+import socket
+socket.gethostbyname("")
