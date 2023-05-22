@@ -85,13 +85,10 @@ WSGI_APPLICATION = 'eatupweb.wsgi.application'
 
 DATABASES = {
     'default': {
-                'ENGINE': 'django.db.backends.postgresql_psycopg2',
-                'NAME': 'railway',
-                'USER': 'postgres',
-                'PASSWORD': 'bvHesQAxx1Ma9ufFGRzt',
-                'HOST': 'containers-us-west-122.railway.app',
-                'PORT': '6077',
-            },
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': str(os.path.join(BASE_DIR, "db.sqlite3"))
+            #'NAME': BASE_DIR / 'db.sqlite3',
+    },
 }
 
 
@@ -152,12 +149,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.eatup.ng'
-EMAIL_PORT =  465
-EMAIL_USE_TLS = False
-EMAIL_HOST_USER = 'hello@eatup.ng'
-EMAIL_HOST_PASSWORD = 'Olatunbosun1##'
-DEFAULT_FROM_EMAIL = 'hello@eatup.ng'
+EMAIL_HOST = 'smtp.zoho.com'
+EMAIL_PORT =  587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'eatupng@zohomail.com'
+EMAIL_HOST_PASSWORD = 'vEWaT1HjUnY9'
+DEFAULT_FROM_EMAIL = 'eatupng@zohomail.com'
 SERVER_MAIL = DEFAULT_FROM_EMAIL
 
 

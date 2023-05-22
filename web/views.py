@@ -35,7 +35,7 @@ class WaitListView(generics.GenericAPIView):
 
                 msg = EmailMultiAlternatives(subject, text_content, email_from, [email])
                 msg.attach_alternative(html_content, "text/html")
-                # msg.send()
+                msg.send()
                 created = serializer.save()
                 return Response('email sent successfully', status=status.HTTP_201_CREATED)
         else:
