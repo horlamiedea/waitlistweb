@@ -158,7 +158,7 @@ EMAIL_PORT =  587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'eatupng@zohomail.com'
 EMAIL_HOST_PASSWORD = 'vEWaT1HjUnY9'
-DEFAULT_FROM_EMAIL = 'eatupng@zohomail.com'
+DEFAULT_FROM_EMAIL = 'noreply<eatupng@zohomail.com>'
 SERVER_MAIL = DEFAULT_FROM_EMAIL
 
 

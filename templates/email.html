@@ -1,95 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Waitlist Sign-Up Welcome Email</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            font-family: Arial, sans-serif;
-        }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Waitlist Sign-Up Welcome Email</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 254, 230, 1);
+    }
 
-        nav {
-            display: flex;
-            align-items: center;
-            height: 100px;
-            background-color: rgba(255, 202, 1, 1);
-        }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 80px;
+      max-width: 752px;
+      background-color: rgba(255, 202, 1, 1);
+      background-image: url("https://res.cloudinary.com/tomisin/image/upload/v1677167835/Frame_732_keweal.png");
+      background-size: contain;
+    }
 
-        main {
-            margin: 5% auto;
-            max-width: 500px;
-            padding: 10px;
-            width: 90%;
-            line-height: 1.4;
-        }
+    .main-body {
+      max-width: 86%;
+      width: 86%;
+      margin: 0 auto !important;
+    }
 
-        footer {
-            display: flex;
-            align-items: center;
-            height: 100px;
-            background-color: black;
-            margin-top: auto;
-        }
+    main {
+      padding: 30px;
+      line-height: 1.4;
+      color: rgba(0, 0, 0, 0.7);
+      background-color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-size: 16px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    }
 
-        @media screen and (min-width: 600px) {
-            main {
-                width: 500px;
-            }
-        }
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 24px;
+    }
 
-        @media screen and (max-width: 600px) {
-            main {
-                max-width: 90%;
-            }
-        }
-    </style>
+    main p {
+      margin-bottom: 12px;
+    }
+
+    .textStyle {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.0025em;
+      color: rgba(0, 0, 0, 0.45);
+      margin-bottom: 6px;
+    }
+
+    hr {
+      margin-top: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    .socials {
+      margin-top: 20px;
+      margin-bottom: 12px;
+    }
+
+    .icon-style {
+      width: 24px;
+      height: 24px;
+      border-radius: 100px;
+      margin-right: 5px;
+    }
+
+    .unsubscribe {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 480px) {
+      main {
+        padding: 30px 10px;
+      }
+
+      h1 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 16px;
+      }
+
+      main p {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      hr {
+        margin-top: 30px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <div class="main-body">
     <nav>
-        <a href="https://www.eatup.ng/">
-            <img 
-                src="https://res.cloudinary.com/tomisin/image/upload/v1679582025/EatUp_Logo_lgfpko.png"
-                alt="Logo"
-                width="123"
-                height="48"
-            >
-        </a>
+      <a href="https://www.eatup.ng/">
+        <img height="40" width="160" alt="Logo." src="https://res.cloudinary.com/tomisin/image/upload/v1685111857/EatUp_Logo_1_1_s1xrv2.png" />
+      </a>
     </nav>
-
     <main>
-        <p>Hooray!<br>
-            Thank you for signing up to use the EatUp App.
-        </p>
-        <p>
-            The EatUp 3-in-one food delivery app helps you order a meal from your favorite restaurant, track your order, and make payments using a feeding wallet.
-        </p>
-        <p>
-            From now on, you are officially in the loop to get regular updates about our awesome products, new releases, and maybe even a deal or two from the EatUp Team, delivering happiness to every doorstep. You’ll be the first to know about the best features we’ve got to help you build a happy lifestyle around food.
-        </p>
-        <p>
-            In the meantime, get social with us on <a href="https://web.facebook.com/profile.php?id=100075484587653">Facebook</a>, <a href="https://twitter.com/eatupng">Twitter</a>, <a href="https://www.instagram.com/eatupng/">Instagram</a>, and <a href="https://www.linkedin.com/company/eatupng">LinkedIn</a> to join our online community and get a jump on what we’ve been cooking.
-        </p>
-        <p>
-            Stay Happy,<br>
-           <i>The EatUp Team.</i>
-        </p>
-    </main>
-
-    <footer>
-        <a href="https://www.eatup.ng/">
-            <img 
-                src="https://res.cloudinary.com/tomisin/image/upload/v1680088586/EatUp_Logo_white_1_ynej2l.png"
-                alt="Logo"
-                width="123"
-                height="48"
-            >
+      <h1>Hooray!</h1>
+      <p>Thank you for signing up to use the EatUp App.</p>
+      <p>The EatUp 3-in-one food delivery app helps you order a meal from your favorite restaurant, track your order, and make payments using a feeding wallet.</p>
+      <p>From now on, you are officially in the loop to get regular updates about our awesome products, new releases, and maybe even a deal or two from the EatUp Team, delivering happiness to every doorstep. You’ll be the first to know about the best features we’ve got to help you build a happy lifestyle around food.</p>
+      <p>In the meantime, get social with us on <a href="https://web.facebook.com/profile.php?id=100075484587653">Facebook</a>, <a href="https://twitter.com/eatupng">Twitter</a>, <a href="https://www.instagram.com/eatupng/">Instagram</a>, and <a href="https://www.linkedin.com/company/eatupng">LinkedIn</a> to join our online community and get a jump on what we’ve been cooking.</p>
+      <p style="margin-top: 12px; height: 38px; display: flex; align-items: end;">Stay Happy, <br />The EatUp Team.</p>
+      <hr />
+      <p class="textStyle">
+        <span><img alt="Support Agent" src="https://res.cloudinary.com/tomisin/image/upload/v1685109465/Support_agent_1_o6tgzt.png" style="vertical-align: bottom;" /></span>
+        +234 8138562959
+      </p>
+      <p class="textStyle" style="margin-top: 0;">
+        <span><img alt="Email" src="https://res.cloudinary.com/tomisin/image/upload/v1685109461/Email_1_xb5d65.png" style="vertical-align: bottom;" /></span>
+        hello@eatup.ng
+      </p>
+      <p class="textStyle">
+        Made with <span><img alt="favourite" src="https://res.cloudinary.com/tomisin/image/upload/v1685109457/Favorite_xdgvzm.png" style="vertical-align: bottom;" /></span> by Eatup Nigeria <span><img alt="copyright" src="https://res.cloudinary.com/tomisin/image/upload/v1685110724/Group_pgmpoh.png" style="vertical-align: sub;" /></span> 2023. All rights reserved
+      </p>
+      <p class="socials">
+        <a class="icon-style" style="background: #1DA1F2" href='https://twitter.com/eatupng' aria-label="Twitter">
+          <img alt="Twitter" src="https://res.cloudinary.com/tomisin/image/upload/v1685114055/Frame_48_dvcyu9.png" />
         </a>
-    </footer>
+        <a class="icon-style" style="background: #BC2A8D" href='https://www.instagram.com/eatupng/' aria-label="Instagram">
+          <img alt="Instagram" src="https://res.cloudinary.com/tomisin/image/upload/v1685114051/Instagram_1_aoaqtu.png" />
+        </a>
+        <a class="icon-style" style="background: #4267B2" href='https://web.facebook.com/people/Eatup-Nigeria/100075484587653/' aria-label="Facebook">
+          <img alt="Facebook" src="https://res.cloudinary.com/tomisin/image/upload/v1685114048/Facebook_vbsz1s.png" />
+        </a>
+        <a class="icon-style" style="background: #0072B1" href='https://www.linkedin.com/company/eatupng/' aria-label="Linkedin">
+          <img alt="Linkedin" src="https://res.cloudinary.com/tomisin/image/upload/v1685114046/LinkedIn_quj8r7.png" />
+        </a>
+      </p>
+      <a href="#" class="textStyle unsubscribe">click here to unsubscribe</a>
+    </main>
+  </div>
 </body>
 </html>
